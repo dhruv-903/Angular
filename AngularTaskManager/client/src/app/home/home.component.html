@@ -1,0 +1,18 @@
+
+<body>
+  <app-navbar></app-navbar>
+
+  <app-addtask [hideShowContainer]=toggleEvent (reverse)="toggleAddContainer($event)" (taskEvent)="receiveTask($event)"></app-addtask>
+  <app-updatetask [toggleContainerEvent]=updateModal (updateModalClose)="closeUpdateModal($event)"></app-updatetask>
+  
+  <div class="task-container" *ngFor="let task of myTaskArr index as i" >
+    <div class="task-title">{{task.title}}</div>
+    <div class="task-description">{{task.description}}</div>
+    <div class="task-buttons">
+      <button class="delete" (click)="deleteFunction(i)" >Delete</button>
+      <button class="update" (click)="myUpdateRoute(i)">Update</button>
+      <button class="done" (click)="taskDone(i)" >Done</button>
+    </div>
+  </div>
+
+</body>

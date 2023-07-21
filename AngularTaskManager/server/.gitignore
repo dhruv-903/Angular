@@ -1,0 +1,30 @@
+# Ignore node_modules directory
+node_modules/
+
+# Ignore log files
+*.log
+
+# Ignore environment-specific files
+.env
+.env.*
+*.env.local
+
+# Ignore build artifacts
+/build
+/dist
+
+# Ignore any sensitive or secret files (e.g., API keys, credentials)
+secrets.txt
+credentials.json
+
+# Ignore any file with a .tmp extension
+*.tmp
+
+# Ignore backup files (e.g., created by editors or IDEs)
+*.bak
+
+# Ignore any file with .DS_Store (specific to macOS)
+.DS_Store
+
+# Ignore any file with .idea/ (specific to JetBrains IDEs)
+.idea/

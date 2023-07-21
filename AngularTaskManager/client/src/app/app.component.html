@@ -1,0 +1,4 @@
+<body>
+    <button class="addTaskButton" (click)="addTaskShow($event)" >Add Task</button>
+    <app-home [toggleEvent]=addTaskContainer (reverse)="toggleAddContainer($event)" ></app-home>
+</body>
